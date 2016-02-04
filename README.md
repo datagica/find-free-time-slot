@@ -11,7 +11,10 @@ Find a free time slot in a tight schedule
 ```javascript
 import findFreeTimeSlot from "@datagica/find-free-time-slot";
 
-findFreeTimeSlot(DATA).then(result => {
+findFreeTimeSlot([
+  {from: DATE1, to: DATE2},
+  {from: DATE3, to: DATE4}
+]).then(result => {
   console.log("result: ", result)
 }).catch(err => {
   console.log("invalid input data: "+err)
@@ -21,8 +24,10 @@ findFreeTimeSlot(DATA).then(result => {
 ## Examples
 
 ```javascript
-{
+
 import findFreeTimeSlot from "@datagica/find-free-time-slot";
+
+const now = moment().startOf('hour');
 
 findFreeTimeSlot([
  {
