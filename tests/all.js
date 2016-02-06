@@ -5,14 +5,14 @@ const assert = chai.assert;
 
 const moment = require('moment');
 
-var util = require('util');
+const util = require('util');
 
 // local functions
 function pretty(obj) {
   return util.inspect(obj, false, 20, true)
 };
 
-import findFreeTimeSlot from "../../lib/find-free-time-slot";
+const findFreeTimeSlot = require("../lib/find-free-time-slot");
 
 describe('find-free-time-slot', function() {
 
