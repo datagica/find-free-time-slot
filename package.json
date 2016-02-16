@@ -1,6 +1,6 @@
 {
   "name": "@datagica/find-free-time-slot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Find a free time slot in a tight schedule",
   "main": "./lib/find-free-time-slot.js",
   "scripts": {
